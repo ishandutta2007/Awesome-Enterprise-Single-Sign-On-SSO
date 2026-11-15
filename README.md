@@ -1,6 +1,6 @@
 # Awesome-Enterprise-Single-Sign-On-SSO
 
-# Top Enterprise Single Sign-On (SSO) Ecosystem
+## Top Enterprise Single Sign-On (SSO) Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on SAML Federation, OIDC Providers & Self-Hosted Identity Platforms*  
