@@ -8,7 +8,7 @@
 <br/>
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&color=red" alt="GitHub Issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
@@ -68,9 +68,9 @@ The table below benchmarks commercial workforce identity and SSO platforms. Entr
 
 Self-hosted and open-source identity providers (IdPs) provide full data ownership, compliance autonomy, and immunity from recurring per-user SaaS license fees.
 
-The table below is sorted in descending order by **GitHub Stars**:
+The table below is sorted in descending order by **GitHub_Stars**:
 
-| Project | GitHub Stars Badge | Description | Primary Protocols |
+| Project | GitHub_Stars_Badge | Description | Primary Protocols |
 | :--- | :--- | :--- | :--- |
 | **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | 🛡️ **The de facto industry benchmark for open-source IAM and SSO.** Maintained by Red Hat and part of the CNCF. Supports multi-realm multi-tenancy, identity brokering, user federation with LDAP/AD, and fine-grained authorization with zero per-user licensing. | SAML 2.0, OIDC, OAuth 2.0, LDAP, Kerberos |
 | **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | 🔒 **High-performance authentication &amp; authorization companion.** Acts as a companion portal alongside reverse proxies (Nginx, Traefik, HAProxy, Envoy, Caddy) providing multi-factor authentication, Passkeys (WebAuthn), and OIDC provider capabilities. | OIDC, OAuth 2.0, Forward Auth, WebAuthn |
@@ -108,7 +108,7 @@ We welcome contributions to expand and refine this ecosystem guide! 🎉
 1. 🍴 Fork the repository.
 2. 🌿 Create a new feature branch (`git checkout -b feature/add-new-sso-tool`).
 3. 📝 Update `README.md` following the exact table structure and format.
-4. 🧪 Ensure all links are live, pricing is verified, and GitHub star badges follow the standard syntax.
+4. 🧪 Ensure all links are live, pricing is verified, and GitHub Stars_Badges follow the standard syntax.
 5. 🚀 Submit a Pull Request with a brief description of the addition or update.
 
 ---
