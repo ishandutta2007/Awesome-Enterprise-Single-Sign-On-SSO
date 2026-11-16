@@ -1,75 +1,137 @@
-# Awesome-Enterprise-Single-Sign-On-SSO
-# Awesome-Enterprise-Single-Sign-On-SSO
+<div align="center">
 
-## Top Enterprise Single Sign-On (SSO) Ecosystem
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO">
+  <img src="assets/banner.svg" alt="Awesome Enterprise Single Sign-On (SSO) Banner" width="100%" />
+</a>
 
-**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
-*Focused on SAML 2.0 Federation, OIDC Providers & Self-Hosted Identity Platforms*  
-**Last updated: March 2026**
+<br/>
+<br/>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Enterprise Single Sign-On (SSO)**. These tools help organizations centralize authentication across applications—covering everything from commercial IdP suites like Okta and Microsoft Entra ID to open-source identity providers that speak SAML 2.0, OIDC, and OAuth 2.0 without per-user licensing.
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO?style=flat-square&color=red" alt="GitHub Issues" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-**Examples** include Okta, Microsoft Entra ID, OneLogin, PingFederate, CyberArk Identity, Google Workspace, Duo, Auth0, JumpCloud, Keycloak, and Authentik (the category leaders).
+<p align="center">
+  <strong>Curated Guide to Enterprise Single Sign-On (SSO), Identity &amp; Access Management (IAM), SAML 2.0 / OIDC Federation, and Self-Hosted Identity Providers</strong>
+</p>
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted SSO, open-source SAML/OIDC identity providers, and community-driven authentication platforms—ideal for organizations seeking data sovereignty and avoiding per-user SaaS pricing that compounds across workforces. The open-source landscape is anchored by **Keycloak**, the enterprise-grade standard backed by Red Hat and the CNCF, which includes SAML 2.0, OIDC, LDAP federation, and MFA with **no per-MAU fees** [citation:10].
+<p align="center">
+  <a href="#-sector-overview--market-dynamics">Sector Dynamics</a> •
+  <a href="#-saashosted-platforms">SaaS Pricing Matrix</a> •
+  <a href="#-open-source-github-projects">Open-Source IdPs</a> •
+  <a href="#-how-to-contribute">Contribute</a> •
+  <a href="#-support--sponsor">Support</a> •
+  <a href="#-star-history">Star History</a>
+</p>
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Okta](https://www.okta.com/)** | **The independent IAM benchmark.** Workforce Identity bundles SSO, MFA, and Universal Directory. **Starter: $6/user/month** (annual). **Essentials: $17/user/month** adds Adaptive MFA, Lifecycle Management, and Access Governance [citation:2]. **Single modules are no longer sold separately**—you buy a suite. A **$1,500/year minimum contract** applies to smaller teams [citation:12]. | Starter: **$6/user/month**; Essentials: **$17/user/month** | No free plan; annual billing only for workforce suites |
-| **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)** | **The default for Microsoft estates.** SAML 2.0 and OIDC federation with Conditional Access. **P1: ~$7/user/month** standalone (list); **P2: ~$10/user/month** (list) [citation:13]. **Often bundled at no extra cost** with Microsoft 365 Business Premium, E3 (P1), or E5 (P2)—many organizations already own it [citation:3]. | P1: **~$7/user/month**; P2: **~$10/user/month** (standalone list) | **Free edition** included with Azure/M365; P1/P2 bundled in many enterprise plans |
-| **[OneLogin](https://www.onelogin.com/)** | Mid-market SSO with SAML and OIDC. **Published tiers: Basic $3, Essentials $6, Business $10, Enterprise (quote)** per user/month [citation:4]. Vendr data shows buyers often achieve **$2.50–$5.00/user/month** for Advanced tier with annual prepayment. **Implementation adds $5K–$15K**; annual escalators of **3–5%** are common [citation:14]. | Basic: **$3/user/month**; Essentials: **$6**; Business: **$10** | Free trial available |
-| **[CyberArk Identity](https://www.cyberark.com/)** | **Modular pricing with the lowest SSO entry point.** **Single Sign-On: $2/user/month**; Adaptive MFA: $3; Lifecycle Management: $4; Workforce Password Management: $5. **Real cost compounds**—SSO + MFA + Lifecycle = **~$9/user/month**, not $2 [citation:15]. | SSO: **$2/user/month**; Modules: $2–$5 each | No free tier; demo via sales |
-| **[Google Workspace](https://workspace.google.com/)** | SAML-based SSO **included in all paid Workspace tiers**. **Business Starter: $7/user/month** (annual/fixed-term); Flexible plan: **$8.40/user/month** [citation:6]. **No free-seat allowance**—bills from seat 1. | Business Starter: **$7/user/month** (annual); Flexible: **$8.40** | **14-day free trial**; no permanent free tier |
-| **[Duo](https://duo.com/editions-and-pricing)** | **Duo Free: $0 for 1–10 users**—genuine free tier for small teams. **Duo Essentials: $3/user/month** adds Single Sign-On (SAML/OIDC). Advantage ($6) and Premier ($9) add advanced access policies and reporting [citation:7]. | Free: **$0** (1–10 users); Essentials: **$3/user/month** | **Free forever**: 1–10 users, core MFA (SSO requires Essentials) |
-| **[Auth0](https://auth0.com/pricing)** | Developer-first identity platform. **Free tier: 25,000 MAU**. **Self-Service SSO is available on select Enterprise plans only**—not on free or lower tiers. Dashboard SSO requires higher tiers [citation:8]. | Quote-only for SSO features; Free tier: 25K MAU | **Free**: 25,000 MAU (SSO not included); **Startup plan**: 100K MAU + SSO free for one year |
-| **[JumpCloud](https://jumpcloud.com/)** | Cloud directory with SSO. **SSO package: ~$11/user/month** (annual listing)—positioned for organizations wanting directory + SSO + device management in one platform [citation:9]. | SSO: **~$11/user/month** | Free tier available for up to 10 users (limited features) |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | **The enterprise-grade open-source SSO standard.** Apache-2.0, backed by Red Hat and the CNCF. **SAML 2.0, OIDC, OAuth 2.0, LDAP/Active Directory federation, MFA, identity brokering, and fine-grained authorization**—all included with **no per-MAU fees and no feature gates** [citation:10]. **Realms provide multi-tenancy**. **Trade-off**: heavyweight deployment and a large configuration surface area—teams wanting quick setup may find initial configuration frustrating. **Best for enterprises needing battle-tested SSO** with deep customization and vendor-neutral open-source governance. |
-| **[Authentik](https://github.com/goauthentik/authentik)** | [![Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | **The most approachable open-source SSO with the most flexible sign-in flows.** MIT core with paid enterprise features. **Flows and stages edited in the admin interface**—custom authentication logic without code. **The only leading open-source IdP with a SCIM provider** (push users to downstream apps). **Forward Auth** for Nginx-backed services is straightforward. **Best for teams with mixed technical backgrounds** wanting maintainable SSO without deep identity expertise. |
-| **[Casdoor](https://github.com/casdoor/casdoor)** | [![Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | **Lightweight Go-based SSO with the widest protocol coverage.** Apache-2.0. **Single Go binary + React UI**—no JVM, no separate worker process. **SAML 2.0, OIDC, OAuth 2.0, CAS, LDAP, RADIUS, and SCIM** all supported. **Built-in MCP server with OAuth 2.1 for AI agents**. **70+ social/enterprise providers** including WeChat and DingTalk. **Syncers import users from Keycloak, Okta, Entra ID, and Google Workspace**—enabling gradual migration. **Best for teams wanting a lighter, UI-first IdP** with legacy protocol support and AI-agent readiness. |
-| **[ZITADEL](https://github.com/zitadel/zitadel)** | [![Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | **Event-sourced SSO with the strongest audit trail and tenant isolation.** AGPL-3.0, Go/TypeScript. **SAML 2.0, OIDC, OAuth 2.0, and SCIM** support. **Instances → Organizations → Projects** hierarchy provides **infrastructure-level tenant isolation**. **Every mutation is an immutable event** for a complete, API-accessible audit trail. **API-first design** with connectRPC, gRPC, and REST. **Best for organizations needing the strongest audit trail and tenant isolation** with a modern API-first design. |
-| **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | **Lightweight SSO for protecting reverse proxy endpoints.** Go-based. **Not a standalone directory**—sits in front of Nginx, Traefik, or HAProxy and handles authentication and 2FA for services behind those proxies. **Best for homelabs and internal service protection** where a full IdP is overkill. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[WSO2 Identity Server](https://github.com/wso2/product-is)** | [![Stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers) | **Open-source IAM with SAML, OIDC, OAuth2, SCIM 2.0, and FIDO2 support.** Apache-2.0. Recognized as a Digital Public Good by the Digital Public Goods Alliance. **Used in 93 countries** across finance, public administration, healthcare, and telecommunications. **Best for organizations wanting a recognized open-source IAM** with broad standards support and enterprise adoption. |
-| **[Janssen Project](https://github.com/JanssenProject/jans)** | [![Stars](https://img.shields.io/github/stars/JanssenProject/jans?style=social&color=white)](https://github.com/JanssenProject/jans/stargazers) | **Linux Foundation-governed IAM server providing OAuth 2.0, OIDC, SAML, FIDO2/WebAuthn, and SCIM.** Apache-2.0. **Kubernetes-native with auto-scaling** for enterprise and national scale. **Low-code flow orchestration (Agama) and policy engine (Cedarling)** for custom authentication logic without forking the core. **Best for organizations needing population-scale SSO** with strong federation readiness. |
-| **[Dex](https://github.com/dexidp/dex)** | [![Stars](https://img.shields.io/github/stars/dexidp/dex?style=social&color=white)](https://github.com/dexidp/dex/stargazers) | **OpenID Connect (OIDC) identity and OAuth 2.0 provider with pluggable connectors.** CNCF project. Often used as an authentication layer in Kubernetes clusters (integrates with Kubernetes API server OIDC). **Best for Kubernetes-native SSO** where Dex acts as the bridge between upstream IdPs and cluster authentication. |
-
-**Frameworks for building custom systems**: Choose **Keycloak** for enterprise-grade SSO with the broadest protocol coverage and zero per-MAU fees [citation:10], **Authentik** for the most approachable setup with SCIM provisioning, **Casdoor** for a lightweight Go binary with built-in LDAP/RADIUS and AI-agent MCP support, or **ZITADEL** for event-sourced audit trails and strict tenant isolation —all without per-user pricing that compounds across large workforces.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- SSO platforms handle authentication credentials and identity data; enforce MFA, least-privilege access, and compliance with applicable regulations (GDPR, SOC 2, HIPAA where relevant). **A compromised IdP exposes every connected application.**
-- **Commercial pricing has significant hidden costs and escalators.** **Okta** no longer sells SSO as a standalone module—Starter ($6/user/mo) bundles SSO+MFA+directory, but a **$1,500/year minimum** applies to smaller teams [citation:12]. **OneLogin's list prices** ($3–$10/user/mo) are starting points—implementation adds **$5K–$15K**, and annual escalators of **3–5%** are common [citation:14]. **CyberArk's $2/user/month SSO** looks cheapest but compounds to **~$9/month** when MFA and Lifecycle are added [citation:15]. **Duo offers a genuine free tier** for 1–10 users, but SSO requires the $3/user/month Essentials plan [citation:7]. **Auth0's self-service SSO is Enterprise-only**—the 25K MAU free tier does not include it [citation:8]. **Keycloak self-hosted has no per-MAU ceiling**—flat compute costs (~$10–20/month on Railway) versus Auth0's $2,000–$5,000/month at 50K MAU [citation:10]. **Validate whether SSO is already bundled in your existing Microsoft 365 or Google Workspace plan** before purchasing a standalone IdP—many organizations already own Entra ID P1/P2 through E3/E5 licensing [citation:3].
+</div>
 
 ---
 
-**Made for identity architects, IT administrators, and organizations building authentication infrastructure.**  
-Let's make enterprise single sign-on more open, interoperable, and secure.
+## 🚀 Overview & Architecture
+
+Welcome to the **Awesome Enterprise Single Sign-On (SSO)** repository! This collection tracks premier **SaaS identity suites** and production-ready **open-source identity providers (IdPs)** that power modern enterprise authentication, federation, and access security.
+
+Whether you are designing a Zero-Trust architecture, implementing workforce federated authentication with **SAML 2.0**, **OIDC (OpenID Connect)**, or **OAuth 2.0**, synchronizing directories with **SCIM 2.0**, or migrating away from per-MAU SaaS vendor lock-in to self-hosted software, this guide provides actionable intelligence, transparent pricing, and direct technical comparisons.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **Enterprise Single Sign-On (SSO) and Identity & Access Management (IAM)** market is estimated at **$18.5 Billion to $22.0 Billion**, expanding at an estimated **13–15% CAGR** driven by zero-trust mandates, hybrid-cloud sprawl, and cyber insurance compliance requirements. 
+
+Market dynamics reflect a **moderately concentrated, bifurcated ecosystem**: mega-cloud ecosystems (**Microsoft Entra ID** and **Google Workspace**) dominate baseline workforce directory seats through productivity bundle lock-ins, while specialized standalone leaders (**Okta**, **CyberArk**, **Ping Identity**) capture complex multi-cloud enterprise federation; in parallel, developer-friendly open-source alternatives (**Keycloak**, **Authentik**, **ZITADEL**) are rapidly capturing cloud-native and sovereignty-conscious infrastructure workloads.
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+The table below benchmarks commercial workforce identity and SSO platforms. Entries are sorted in descending order by **Company Size (Revenue / Market Capitalization / Valuation)**.
+
+| Product | Company Size (Rev / Valuation) | Description | Starting Pricing Tier | Free Tier &amp; Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)** | **~$3.1 Trillion** (Market Cap) / **~$245B+** Ann. Rev | 🏢 Default for Microsoft 365 enterprises. Features SAML 2.0 / OIDC federation, Conditional Access, and hybrid directory sync. | **P1: $7.00/user/month** (annual); **P2: $10.00/user/month** (annual); Suite bundled in M365 E3/E5. | **Free edition** included with Azure/M365 accounts (unlimited users for core directory/SSO); **30-day free trial** for P1/P2. |
+| **[Google Workspace](https://workspace.google.com/)** | **~$2.1 Trillion** (Alphabet Cap) / **~$350B+** Ann. Rev | 🌐 Cloud-native SAML/OIDC Identity Provider built directly into Google Workspace and Cloud Identity. | **Business Starter: $7.00/user/month** (annual contract); Flexible plan: **$8.40/user/month**. | **14-day free trial** (up to 10 users); Cloud Identity Free edition offers **free tier for up to 50 users** (SSO included). |
+| **[CyberArk Identity](https://www.cyberark.com/)** | **~$15 Billion** (Market Cap) / **~$1.0B+** Ann. Rev | 🔐 Modular workforce IAM and privileged access management with adaptive MFA and SSO federation. | **SSO Module: $2.00/user/month**; Adaptive MFA: **$3.00/user/month**; Workforce Password: **$5.00/user/month**. | **30-day free trial** with access to full features for up to 100 users; No permanent free tier. |
+| **[Okta](https://www.okta.com/)** | **~$12 Billion** (Market Cap) / **~$2.6B+** Ann. Rev | 🛡️ The independent enterprise identity benchmark. Bundles SSO, MFA, Universal Directory, and API Access Management. | **Starter Suite: $6.00/user/month** (annual billing; subject to **$1,500/year minimum contract**); **Essentials: $17.00/user/month**. | **30-day free trial** with all workforce features enabled (up to 25 users); No permanent free plan. |
+| **[Duo Security](https://duo.com/editions-and-pricing)** | **~$2.35B** (Acquired by Cisco, ~$230B Cap) | 📱 Cloud identity, continuous zero-trust device posture checks, MFA, and SAML/OIDC Single Sign-On. | **Duo Essentials: $3.00/user/month** (includes SSO); Advantage: **$6.00/user/month**; Premier: **$9.00/user/month**. | **Duo Free: Forever free for up to 10 users** (core 2FA/MFA; SSO requires Essentials); **30-day free trial** of Essentials/Advantage. |
+| **[Auth0](https://auth0.com/pricing)** | **~$6.5B** (Acquired by Okta) | 💻 Developer-first identity-as-a-service (IDaaS) with extensive SDKs, Universal Login, and enterprise SAML connections. | **Self-Service SSO requires Enterprise Plan** (Custom quote, starting at **~$1,500/month**); Developer tier starts at **$35/month**. | **Free forever plan: Up to 25,000 MAUs** (B2C/social logins only; Enterprise SSO requires paid plan); **22-day free trial** of Enterprise features. |
+| **[OneLogin](https://www.onelogin.com/)** | **~$1.5B+** (One Identity / Quest Software) | 🔑 Mid-market enterprise SSO and access management with SmartFactor authentication and directory connector. | **Basic: $3.00/user/month**; **Essentials: $6.00/user/month**; **Business: $10.00/user/month** (annual prepayment; implementation adds $5K–$15K). | **30-day free trial** with unlimited app integrations and directory connector access; No permanent free tier. |
+| **[JumpCloud](https://jumpcloud.com/)** | **~$2.6 Billion** (Private Valuation) | 💻 Unified open directory platform combining cloud LDAP, SAML 2.0/OIDC SSO, and cross-OS device MDM management. | **SSO Package: $11.00/user/month** (annual contract); Core Directory platform: **$15.00/user/month**. | **JumpCloud Free: Forever free for up to 10 users and 10 devices** (includes SSO, LDAP, and device management with 10 days premium support). |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Self-hosted and open-source identity providers (IdPs) provide full data ownership, compliance autonomy, and immunity from recurring per-user SaaS license fees.
+
+The table below is sorted in descending order by **GitHub Stars**:
+
+| Project | GitHub Stars Badge | Description | Primary Protocols |
+| :--- | :--- | :--- | :--- |
+| **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | 🛡️ **The de facto industry benchmark for open-source IAM and SSO.** Maintained by Red Hat and part of the CNCF. Supports multi-realm multi-tenancy, identity brokering, user federation with LDAP/AD, and fine-grained authorization with zero per-user licensing. | SAML 2.0, OIDC, OAuth 2.0, LDAP, Kerberos |
+| **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | 🔒 **High-performance authentication &amp; authorization companion.** Acts as a companion portal alongside reverse proxies (Nginx, Traefik, HAProxy, Envoy, Caddy) providing multi-factor authentication, Passkeys (WebAuthn), and OIDC provider capabilities. | OIDC, OAuth 2.0, Forward Auth, WebAuthn |
+| **[Authentik](https://github.com/goauthentik/authentik)** | [![Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | ⚡ **Modular, user-friendly open-source IdP with visual flow execution.** Features drag-and-drop authentication pipelines, native SCIM outbound provisioning, built-in reverse proxy forward-auth, and unified social/enterprise federation. | SAML 2.0, OIDC, OAuth 2.0, SCIM 2.0, LDAP, Forward Auth |
+| **[Ory Hydra](https://github.com/ory/hydra)** | [![Stars](https://img.shields.io/github/stars/ory/hydra?style=social&color=white)](https://github.com/ory/hydra/stargazers) | ⚡ **Hardened, headless OAuth 2.0 and OpenID Connect (OIDC) engine.** Built in Go, Hydra implements OpenID Foundation certified specs without enforcing opinionated UI, letting you build custom login, consent, and registration flows. | OIDC, OAuth 2.0 |
+| **[ZITADEL](https://github.com/zitadel/zitadel)** | [![Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | 📜 **Event-sourced cloud-native identity platform.** Written in Go with an API-first approach (gRPC, REST, connectRPC). Features strict multi-tenancy (Instance &gt; Org &gt; Project), immutable audit trails, and out-of-the-box Passkey/FIDO2 authentication. | SAML 2.0, OIDC, OAuth 2.0, SCIM 2.0, FIDO2 |
+| **[OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)** | [![Stars](https://img.shields.io/github/stars/oauth2-proxy/oauth2-proxy?style=social&color=white)](https://github.com/oauth2-proxy/oauth2-proxy/stargazers) | 🛡️ **Reverse proxy that protects upstream web services using identity providers.** Validates authentication through OpenID Connect or standard OAuth2 providers (Google, GitHub, Keycloak, Okta, Azure AD) and passes verified user headers. | OIDC, OAuth 2.0 |
+| **[SuperTokens](https://github.com/supertokens/supertokens-core)** | [![Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers) | 🔑 **Modular open-source authentication architecture.** Offers an extensible alternative to Auth0/Firebase with support for third-party SSO (SAML/OIDC enterprise providers), passwordless login, social logins, and secure session management. | SAML 2.0, OIDC, OAuth 2.0, Session Tokens |
+| **[Casdoor](https://github.com/casdoor/casdoor)** | [![Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | 🚀 **Lightweight Go &amp; React UI identity and access management platform.** Single binary deployment with support for 70+ identity providers, built-in SCIM, CAS 1.0–3.0, RADIUS, LDAP, and a native Model Context Protocol (MCP) server for AI agents. | SAML 2.0, OIDC, OAuth 2.0, CAS, SCIM, RADIUS, LDAP |
+| **[Ory Kratos](https://github.com/ory/kratos)** | [![Stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers) | 🧬 **API-first identity, user management, and credential store.** Native support for Passkeys/WebAuthn, multi-factor authentication (TOTP/SMS), self-service registration/recovery, and identity schema customization without UI lock-in. | OIDC, OAuth 2.0, WebAuthn, TOTP |
+| **[Apereo CAS](https://github.com/apereo/cas)** | [![Stars](https://img.shields.io/github/stars/apereo/cas?style=social&color=white)](https://github.com/apereo/cas/stargazers) | 🎓 **Battle-tested enterprise single sign-on server built on Java/Spring Boot.** Widely deployed across universities, governments, and large enterprises. Supports comprehensive federation protocols and multidirectional identity translation. | CAS 1.0–3.0, SAML 2.0, OIDC, OAuth 2.0, WS-Federation, RADIUS |
+| **[Dex](https://github.com/dexidp/dex)** | [![Stars](https://img.shields.io/github/stars/dexidp/dex?style=social&color=white)](https://github.com/dexidp/dex/stargazers) | ☸️ **CNCF OpenID Connect (OIDC) identity provider with pluggable connectors.** Functions as an authentication intermediary bridging Kubernetes clusters and cloud infrastructure with upstream SAML, LDAP, GitHub, and OAuth providers. | OIDC, OAuth 2.0, SAML, LDAP |
+| **[Kanidm](https://github.com/kanidm/kanidm)** | [![Stars](https://img.shields.io/github/stars/kanidm/kanidm?style=social&color=white)](https://github.com/kanidm/kanidm/stargazers) | 🦀 **Modern, secure identity management platform and directory written in Rust.** Designed to replace traditional OpenLDAP and Active Directory with built-in OAuth2/OIDC, WebAuthn, PAM integration, and strict memory safety. | OIDC, OAuth 2.0, LDAP, PAM, WebAuthn |
+| **[WSO2 Identity Server](https://github.com/wso2/product-is)** | [![Stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers) | 🏛️ **Enterprise-grade CIAM and workforce identity server.** Recognized by the Digital Public Goods Alliance, utilized in 90+ countries for mission-critical digital identity, adaptive authentication, and fine-grained access management. | SAML 2.0, OIDC, OAuth 2.0, SCIM 2.0, FIDO2, WS-Trust |
+| **[Janssen Project](https://github.com/JanssenProject/jans)** | [![Stars](https://img.shields.io/github/stars/JanssenProject/jans?style=social&color=white)](https://github.com/JanssenProject/jans/stargazers) | 🌐 **Linux Foundation cloud-native identity platform.** Evolution of the Gluu Server engineered for national scale, auto-scaling Kubernetes deployments, Agama low-code flow orchestration, and high-throughput OAuth2/OIDC authorization. | OIDC, OAuth 2.0, SAML 2.0, SCIM, FIDO2 |
+
+---
+
+## 🛠️ Protocols &amp; Standards Comparison
+
+| Protocol | Primary Use Case | Transport / Format | Security Strengths | Common Implementations |
+| :--- | :--- | :--- | :--- | :--- |
+| **SAML 2.0** | Enterprise B2B &amp; Workforce Web SSO | XML over HTTP POST / Redirect | XML Signature, encryption, established trust certificates | Okta, Entra ID, Keycloak, CAS, Shibboleth |
+| **OIDC (OpenID Connect)** | Modern Web, Mobile &amp; API Identity | JSON / JWT over REST HTTPS | Cryptographically signed ID Tokens, PKCE protection | Authentik, Ory Hydra, ZITADEL, Auth0 |
+| **OAuth 2.0** | Delegated Authorization &amp; API Scopes | JSON Bearer Tokens / Headers | Granular scopes, refresh token rotation, MTLS | Dex, Casdoor, Keycloak, Hydra |
+| **SCIM 2.0** | Automated User &amp; Group Provisioning | REST JSON API | Automated lifecycle syncing, immediate deprovisioning | Entra ID, Okta, Authentik, Casdoor |
+| **FIDO2 / WebAuthn** | Passwordless &amp; Phishing-Resistant MFA | Public-key cryptography (Hardware) | Origin binding, resistant to credential theft and SIM swaps | Duo, ZITADEL, Kanidm, Authelia |
+
+---
+
+## 🤝 How to Contribute
+
+We welcome contributions to expand and refine this ecosystem guide! 🎉
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a new feature branch (`git checkout -b feature/add-new-sso-tool`).
+3. 📝 Update `README.md` following the exact table structure and format.
+4. 🧪 Ensure all links are live, pricing is verified, and GitHub star badges follow the standard syntax.
+5. 🚀 Submit a Pull Request with a brief description of the addition or update.
+
+---
+
+## 💖 Support &amp; Sponsor
+
+If you find this repository helpful for your architecture research, enterprise evaluations, or homelab setup, consider supporting the maintenance of this open resource:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork it** and share it with your IT, security, and DevOps teams.
+- ☕ **Buy a coffee &amp; sponsor future development:** [**GitHub Sponsors Dashboard (ishandutta2007)**](https://github.com/sponsors/ishandutta2007)
+
+Thank you to all community contributors and identity security practitioners worldwide! 🙌
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Enterprise-Single-Sign-On-SSO&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This curated directory is for educational and technical evaluation purposes; inclusion does not constitute endorsement.
+- Single Sign-On platforms manage root security credentials and directory trust. Always enforce multi-factor authentication (MFA/Passkeys), configure least-privilege role-based access control (RBAC), and conduct rigorous security audits prior to deploying any identity solution in production.
